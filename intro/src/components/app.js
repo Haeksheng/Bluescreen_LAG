@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Form from "./form"
 import $ from "jquery"
+import Game from "./Game"
 
 export default class App extends Component {
    
@@ -21,6 +22,13 @@ handleChange = (e) => this.setState({nickname: e.target.value})
       
       <div className={this.state.visibility}>
         <div className="col-xs-12 intro">
+        
+        <div className="game-content"> 
+        <Game/>
+
+        </div>
+        
+        
         <div className='intro-game'>
       
         
@@ -29,16 +37,18 @@ handleChange = (e) => this.setState({nickname: e.target.value})
       <h1>Choose your nickname</h1>
         
         
-        </div>
-        </div>
-        <Form changer={this.handleChange}/>
         
-
+        
+        <Form changer={this.handleChange}/>
+        </div>
+        </div>
 
         </div>
         <div className="fontf">
-        <h1 style={{marginTop: "50px"}}> You are playing as {this.state.nickname}</h1>
+        <h1 style={{marginTop: "50px"}}> You are playing as <p style={{color:"white",fontSize:"50px"}}>{this.state.nickname}</p></h1>
         </div>
+        
+
         
       </div>);
 
