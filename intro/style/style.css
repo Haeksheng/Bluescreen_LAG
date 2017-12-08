@@ -1,0 +1,64 @@
+
+@font-face {
+    font-family: digital;
+    src: url("digital.ttf");
+}
+
+.calculator{
+ background: #848484;
+ margin-top: 25px;  /* asdas*/
+ height: 600px
+}
+.result-box{
+    background: #42f49b;
+    font-size: 3em;
+     margin-top: 15px;
+     border: solid black 1px;
+     text-align: right;
+     font-family: digital;
+
+
+
+
+ }
+.Key{
+    background: #FFF;
+    border: solid black 1px;
+    width: 23%;
+    height: 75px;
+    font-size: 3em;
+    margin-top: 40px;
+    text-align: center;
+    display: inline-block;
+
+    
+}    
+
+.intro {
+  background:red;
+  font-family: digital;  
+}
+
+.button-submit{
+border-radius: 5px;
+background:white;
+color: red;
+font-family: digital;
+
+
+}
+
+.formm{
+ text-align: center;
+ border-radius:5px;
+}
+
+.formm:focus{
+background: rgb(255, 180, 180);
+
+}
+
+.fontf{
+
+    font-family:digital;
+}
