@@ -62,3 +62,8 @@ background: rgb(255, 180, 180);
 
     font-family:digital;
 }
+
+.block {
+
+    display: none;
+}
