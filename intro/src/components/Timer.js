@@ -11,11 +11,11 @@ export default class Timer extends Component {
     render() {
         return (
             <div>
-               <div className="timer-style">
+               <div className="timer-style ">
                 <ReactCountdownClock seconds={10}
                      color="#a30303"
                      alpha={0.7}
-                     size={75}
+                     size={150}
                      paused={window.unpaus}
                      
                      
