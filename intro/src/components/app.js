@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import Form from "./form"
 import $ from "jquery"
 import Game from "./Game"
-
+import Axios from "axios"
 export default class App extends Component {
    
 
 state = {
   nickname: "",
-  visibility: 'true'
+ 
 }
 playerNick = () => {
   window.playerNick=this.state.nickname;
@@ -20,7 +20,9 @@ handleChange = (e) =>{ this.setState({nickname: e.target.value});
 
 }
 
-
+saveCount = () => {
+  window.count=this.state.count;
+}
 
   render() {
     

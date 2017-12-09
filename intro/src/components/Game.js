@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import Timer from "./Timer"
-
+import Axios from "axios"
 export default class Game extends Component {
  state = {
     count : 0,
-   
+   first: 69,
+   second: 15,
+   third: 13
     
  }
 getClassName = () => {
@@ -23,10 +25,6 @@ unPause = (e) => {
     window.unpaus=false
 
 }
-           
-        
-    
-
 
 changeState = (e) => {
     this.setState({count: this.state.count +1});
@@ -37,22 +35,25 @@ changeState = (e) => {
         return (
             <div>
              <div className="highscore" id="high">
-              <h2>   End of game   </h2>
-                <h2> player {window.playerNick} </h2>
-              <h1 > <strong>  You scored  {this.state.count} </strong> </h1>                
+              <h2>End of game</h2>
+                <p>player: {window.playerNick}</p>
+              <h1 > <strong>  You scored: {this.state.count} </strong> </h1>                
              
                 <div>
-               
                 
-                 TADY BUDE SYSTEM KTEREJ BUDE VYHODNOCOVAT 3  POLOŽKY , NEJVETSI Z NICH NAPISE NAHORE JAKO NA PRVNIM MISTE
-                 NAPISTE TO HOŠI , DÍKY
-                
-                  
-                  
-                 
 
+                {this.state.count > this.state.first && <div>You are the best! </div>}
+                {this.state.count > this.state.second && <div>Great job! You've earned second place! </div>}
+                {this.state.count == this.state.third && <div>Well done! You're third. </div>}
+                <h2>first place: {this.state.first}</h2>  
+                <h2>second place: {window.playerNick} {this.state.count} </h2>
+                <h2>third place: {this.state.third}</h2>
+                
+                
+                
+                
                 </div>
-
+        
             
             
             
@@ -63,7 +64,7 @@ changeState = (e) => {
                
                <h1>Count : {this.state.count}</h1> 
                 <button className="btn-danger" style={{fontSize:"50px",} } id="changeMe"  onClick={this.changeState}>click on me </button>
-           <Timer/> 
+           <Timer /> 
             </div>
             
             
