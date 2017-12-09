@@ -7,11 +7,11 @@ export default class App extends Component {
    
 
 state = {
-  nickname: "",
-  visibility: 'true'
+  nickname: ""
+  
 }
 playerNick = () => {
-  window.playerNick=this.state.nickname;
+  window.player = this.state.nickname;
 }
 
 handleChange = (e) =>{ this.setState({nickname: e.target.value});
