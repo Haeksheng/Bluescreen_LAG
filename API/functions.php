@@ -1,5 +1,5 @@
 <?php
-
+header('Content-Type:application/json');
 function response($payload) {
     $json = json_encode($payload);
     echo $json;
