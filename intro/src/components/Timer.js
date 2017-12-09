@@ -14,9 +14,15 @@ export default class Timer extends Component {
                      color="black"
                      alpha={0.9}
                      size={50}
+                     paused={false}
+                     
+                     
                      onComplete={ () => {
-                            document.write(":)");
-                         }
+                     
+                     document.write(":)");
+                        
+                        
+                        }
                      } 
                      
                       />

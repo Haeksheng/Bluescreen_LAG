@@ -12,7 +12,10 @@ if (this.state.count == 1) {document.getElementById("changeMe").classList.add('l
 }
         
        
+unPause = () => {
+        this.props(paused: false)
 
+}
            
         
     
@@ -20,7 +23,8 @@ if (this.state.count == 1) {document.getElementById("changeMe").classList.add('l
 
 changeState = (e) => {
     this.setState({count: this.state.count +1});
-    this.getClassName()
+    this.getClassName();
+    this.unPause()
 }
     render() {
         return (
