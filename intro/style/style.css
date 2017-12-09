@@ -1,0 +1,79 @@
+
+@font-face {
+    font-family: digital;
+    src: url("digital.ttf");
+}
+
+  
+
+.intro {
+  background:red;
+  font-family: digital;  
+}
+
+.button-submit{
+border-radius: 5px;
+background:white;
+color: red;
+font-family: digital;
+
+
+}
+
+.formm{
+ text-align: center;
+ border-radius:5px;
+}
+
+.formm:focus{
+background: rgb(255, 180, 180);
+
+}
+
+.fontf{
+
+    font-family:digital;
+}
+
+.block {
+
+    display: none;
+}
+
+.game-content{
+    display:none;
+    background:white;
+    height: 50vh;
+}
+
+.buttn-click {
+background: blue; 
+color: red;
+
+}
+
+.lol {
+
+background: blue !important;
+}
+.lol6{ background:black !important;}
+           
+
+.highscore {
+    width:100%;
+    height:100vh;
+    color : pink ;
+    background: red;
+    z-index:2;
+    display:none;
+    padding-top: 20vh;
+    
+}
+.timer-style {
+
+
+align-content: center;
+margin-top: 10px;
+font-size: 25px;
+margin-right: 175px;
+}

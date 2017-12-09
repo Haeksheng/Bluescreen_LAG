@@ -1,0 +1,16 @@
+.intro {
+
+    background-color:red;
+    font-family: name;
+}
+
+
+@font-face {
+font-family: digital;
+src: url("digital.ttf")  ;  
+}
+
+@font-face {
+    font-family: name;
+    src: url("Perfect DOS VGA 437 Win.ttf");
+}
