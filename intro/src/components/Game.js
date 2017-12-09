@@ -38,7 +38,7 @@ changeState = (e) => {
             <div>
              <div className="highscore" id="high">
               <h2>   End of game   </h2>
-                <h2> player {this.state.nickname} </h2>
+                <h2> player {window.playerNick} </h2>
               <h1 >   You scored  {this.state.count}  </h1>                
              
                 <div>

@@ -10,10 +10,15 @@ state = {
   nickname: "",
   visibility: 'true'
 }
+playerNick = () => {
+  window.playerNick=this.state.nickname;
+}
+
+handleChange = (e) =>{ this.setState({nickname: e.target.value});
+                      this.playerNick();                   
 
 
-handleChange = (e) => this.setState({nickname: e.target.value});
-    
+}
 
 
 
