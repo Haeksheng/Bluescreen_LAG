@@ -47,12 +47,32 @@ background: rgb(255, 180, 180);
 }
 
 .buttn-click {
-background: blue;
+background: blue; 
 color: red;
 
 }
 
 .lol {
-border-radius: 50px;
+
+background: blue !important;
+}
+.lol6{ background:black !important;}
+           
+
+.highscore {
+    width:100%;
+    height:100vh;
+    color : pink ;
+    background: red;
+    z-index:2;
+    display:none;
+    padding-top: 20vh;
+    
+}
+.timer-style {
+
+
+align-content: center;
+margin-top: 10px;
 
 }

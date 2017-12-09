@@ -12,7 +12,8 @@ state = {
 }
 
 
-handleChange = (e) => this.setState({nickname: e.target.value})
+handleChange = (e) => this.setState({nickname: e.target.value});
+    
 
 
 

@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import ReactCountdownClock from "react-countdown-clock"
+import $ from "jquery"
+
 export default class Timer extends Component {
     
     state = {
@@ -9,27 +11,29 @@ export default class Timer extends Component {
     render() {
         return (
             <div>
-               
-                <ReactCountdownClock seconds={5}
-                     color="black"
-                     alpha={0.9}
-                     size={50}
-                     paused={false}
+               <div className="timer-style">
+                <ReactCountdownClock seconds={10}
+                     color="#a30303"
+                     alpha={0.7}
+                     size={75}
+                     paused={window.unpaus}
                      
                      
                      onComplete={ () => {
-                     
-                     document.write(":)");
-                        
-                        
-                        }
-                     } 
-                     
-                      />
-           
+                        $(".highscore").show(200); 
+                        $("#dvanactHodin").hide(0);} 
+                
+                        } 
+                      
+                     />
+                      
+           </div>
            
            </div>
 
         )
     }
+}
+ReactCountdownClock.defaultProps = {
+    paused: true
 }
