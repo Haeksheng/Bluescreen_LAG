@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Form from "./form"
 import $ from "jquery"
 import Game from "./Game"
-import Axios from "axios"
+import axios from "axios"
 export default class App extends Component {
    
 
@@ -20,9 +20,7 @@ handleChange = (e) =>{ this.setState({nickname: e.target.value});
 
 }
 
-saveCount = () => {
-  window.count=this.state.count;
-}
+
 
   render() {
     

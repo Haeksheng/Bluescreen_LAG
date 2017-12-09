@@ -4,9 +4,9 @@ import Axios from "axios"
 export default class Game extends Component {
  state = {
     count : 0,
-   first: 69,
+   first: 35,
    second: 15,
-   third: 13
+   third: 5
     
  }
 getClassName = () => {
@@ -19,7 +19,9 @@ document.getElementById("changeMe").classList.remove("lol6");
 }}
 }
 
-
+componentWillMount(){
+    window.count=this.state.count;
+  }
 
 unPause = (e) => {
     window.unpaus=false
@@ -29,9 +31,12 @@ unPause = (e) => {
 changeState = (e) => {
     this.setState({count: this.state.count +1});
     this.getClassName();
-    this.unPause()
+    this.unPause();
+   
 }
     render() {
+        window.count=this.state.count;
+       
         return (
             <div>
              <div className="highscore" id="high">
